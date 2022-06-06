@@ -150,6 +150,7 @@ body .container .card:nth-child(2) .box .content a {
 
 body .container .card:nth-child(3) .box .content a {
   background: #23c186;
+  
 }
 
 body .container .card .box {
@@ -227,3 +228,4 @@ body .container .card .box .content a:hover {
   background: #fff;
   color: #000;
 }
+
