@@ -1,0 +1,135 @@
+<!-- Ceci est un commentaire, il permet de donner des informations aux développeurs de la page -->
+<!-- Ceci est un commentaire, il permet de donner des informations aux développeurs de la page -->
+
+
+<!DOCTYPE html>
+<html>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'> 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<!-- Entête de la page web -->
+<head>
+        <meta charset="utf-8" />
+		<link rel="stylesheet"  title="style 1"  href="detente.css" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> espace detente </title>
+</head>
+<header style="padding-bottom: 30px">
+<nav class="navbar navbar-expand-lg navbar-light bg-light" style="font-family: 'Quicksand', sans-serif; font-weight: 500;">
+  <img src="IMAGES/icon.png" width="32px" height="32px">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fa fa-home" style="padding-left: 10px; padding-right: 10px"></i></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Thèmes
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown" >
+          <a class="dropdown-item" href="#">Infirmerie et assistante sociale</a>
+          <a class="dropdown-item" href="#">Cantine</a>
+          <a class="dropdown-item" href="#">Fablab</a>
+		  <a class="dropdown-item" href="#">Espaces détente</a>
+		  <a class="dropdown-item" href="#">CDI</a>
+		  <a class="dropdown-item" href="#">Salle de musique et d'art</a>
+		  <a class="dropdown-item" href="#">Salles de travail</a>
+		  <a class="dropdown-item" href="#">Vie scolaire</a>
+		  <a class="dropdown-item" href="#">Gymnase</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">À propos</a>
+      </li>
+
+    </ul>
+    <!-- <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form> -->
+  </div>
+</nav>
+</header>
+<h1> ESPACE DETENTE </h1>
+	
+	<!-- Un saut de ligne-->
+	<br/>
+	
+	<h2> Sur l'ensemble du lycée </h2>
+	<table align="center">
+	<tr>
+	<th id"BT_General">
+	<p>batiment general</p>
+	<img src="images/forumBG.jpg" alt=""width="300" height="200" /> <br />
+	</th>
+	<th id"BT_Tech">
+	<p>batiment technique</p>
+	</th>
+	</tr>
+	</table>
+	
+	<!-- Corps de la page web -->
+	<body>
+		
+	     <p>
+		Un texte dans un encadré, vous pourrez placer votre media ici par exemple 
+		<br/>
+		<br/>
+
+		<img src="IMAGES/image_site.jpeg" /><br/> 
+		
+	       </p>
+		
+	<p>
+		Entrer le mot "pomme :"
+		
+	<input type="text" id="test">
+	<input type="button" value="Valider" onclick="z()"><span id="err"></span>
+</p>
+
+<footer style="background-color: white; padding: 20px">
+<ul class="nav justify-content-center">
+  <li class="nav-item">
+    <a class="nav-link active" href="#" style="text-decoration: none;color: black;">🡠</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#" style="text-decoration: none;color: black;">🡢</a>
+  </li>
+</ul>
+</footer>
+
+</body>
+
+<script>
+function z()
+{
+var a=document.getElementById("test");
+if((a.value=="pomme"))
+{
+document.getElementById('err').innerHTML= 'OUI';
+}
+else
+{
+document.getElementById('err').innerHTML= 'NON';
+
+}
+
+}
+</script>
+</html>
+	
+	
+	
+	
+	
+	

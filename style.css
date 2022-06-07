@@ -110,14 +110,19 @@ span {
     color: #2BD6B4;
 }
 body {
-  display: flex;
+  
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+ 
   min-height: 100vh;
-  background: linear-gradient(#079992, #78e08f);
+  background-image: url("icon.png"),linear-gradient(#2BD6B4, #098068);
+ background-repeat:no-repeat;
+ 
 }
-
+.container-flex{
+  display: flex;
+  flex-wrap: wrap;
+}
 body .container {
   display: flex;
   justify-content: center;
@@ -152,6 +157,16 @@ body .container .card:nth-child(3) .box .content a {
   background: #23c186;
   
 }
+body .container .card:nth-child(4) .box .content a {
+  background: #f006bd;
+  
+}
+body .container .card:nth-child(5) .box .content a {
+  background: #f09206;
+  
+}
+
+
 
 body .container .card .box {
   position: absolute;
